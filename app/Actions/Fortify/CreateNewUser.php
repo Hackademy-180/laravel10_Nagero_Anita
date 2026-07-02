@@ -13,6 +13,8 @@ class CreateNewUser implements CreatesNewUsers
 {
     use PasswordValidationRules;
 
+    // questo file, è la vera registrazione: validi campi, crei utente, aggiorni i campi di dati, ecc..
+
     /**
      * Validate and create a newly registered user.
      *

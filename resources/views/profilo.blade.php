@@ -4,11 +4,12 @@
         style="min-height: 80vh;">
         <div class="text-center text-white">
 
-            <h1 class="display-3 fw-bold"
-                style="text-shadow: 2px 2px 8px rgba(0,0,0,0.8);">
-                Benvenuto, {{ auth()->user()->name }}!
-            </h1>
-
+        <h1>Benvenuto</h1>
+        
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+            <button type="submit">Logout</button>
+        </form>
         </div>
     </div>
 

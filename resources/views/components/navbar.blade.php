@@ -2,9 +2,9 @@
     <div class="container">
 
         <a class="navbar-brand fw-bold" href="{{ route('home') }}">MyBlog</a>
-<img src="/media/logo/logow.png" alt="logo" class="imge-fluid logo">
-        <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                        <img src="/media/logo/logow.png" alt="logo" class="imge-fluid logo">
+                                <button class="navbar-toggler" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#navbarMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -19,7 +19,7 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                        Account
+                        Account +
                     </a>
 
                     <ul class="dropdown-menu dropdown-menu-end">

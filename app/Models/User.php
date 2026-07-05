@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+// da qui andiamo ad astrarre il database; questo file è proprio dentro l'applicazione poichè arriva un utente si registra  ed è importante quindi c'è già il file, 
+
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;

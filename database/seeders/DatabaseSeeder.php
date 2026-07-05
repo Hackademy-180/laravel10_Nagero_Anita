@@ -10,6 +10,11 @@ class DatabaseSeeder extends Seeder
 {
     use WithoutModelEvents;
 
+
+
+// qui richiamo della userfactory e creazione degli utenti; Seeder riempiono di dati le tabelle
+
+
     /**
      * Seed the application's database.
      */

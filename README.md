@@ -1,58 +1,23 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Fortify lavoro di pieno backend
+Utente deve poter effettuare una registrazione; tramite la certella componenti offro la possibilità ad avere una vista di una pagina profilo personale. Riuso il codice, I middleware andranno ad agire invece, come funzione per gestire le richieste di httpma anche per proteggere i nostri accessi, routing; per dati personali ed o altri accessi privati;
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+MODO PIU PULITO PER PASSARE I DATI AD UNA ROTTA  PROTEGGERE ROTTE E' CONSENTIRE ACCESSO SOLO AGLI , AUTENTICATI
+I middleware sono come filtri che processano richieste http è un intermediario cioè in mezzo tra richiesta e risposta e fornisce da funzionamento; in pratica=
+ intercetta la richiesta e, ( verificare l'autenticazionbe di una registrazione, monitora ciò che accade, logga richieste dunque, blocca accessi o appunto modifica header richieste: cioè potrebbe aggiungere o modificare dati di risposta ( cambia i dettagli e personalizza dati d'informazione in base alle esigenze dell'utente )), Agisce sempre inserendosi tra rotte e controller anche i model come auth,guest;....Sono integrati a lavorare in sinergia(ovvero insieme in modo armonioso per lavorare ad un risulto migliore)
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+ Le policies danno vita a queste che non son altre che; delle regole, facenti parte della struttura di sicurezza; che Fortify Middleware, definiscon chi può fare e cosa all'interno dell'applicazione.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+ Gestione di organizzazione modulare, si tratta di astrazioni, semplificano la registrazione, iniezioni di dati gestiti con attenzioni mantenendo controllo e sicurezza; in questo caso si potrebbe dire di toccare molteplici argomenti diversi ad un'unico progetto connessioni tra utente e quindi tra web server e il cliente con autorizzazione server. 
+ RICHIESTE GET : INVIAN DATI NEL URL
+ MENTRE LE POST, INVIANO NEL CORPO DELL RICHIESTA LE PRIME PENSATE QUINDI A RECUPER DI DATI ED I PARAMETRI PASSATI COME QUERY STRING NEL URL, MENTRE LE ALTRE USATE PER INVIO DATI, ESEMPIO DA UN FORM PER POI ESSERE PROCESSATI ED I DATI SON CONTENUTI NEL CORPO DELLA RICHIESTA HHTP NON VISIBILI NEL URL . FUNZIONI CHE HANNO PARAMETRI E DU DATI, SEMPRE OBBLIGATORI ANCHE SE COMPOSTI DA QUELLI CHE CRETI COME FACOLTATIVI HAN UN ALTRO SCOPOM ( SCOPE CONCETTO DI VISIBILITA' DELLA VARIABILE) CON ARROW FUNCTION USATE MOLTISSIMO , PER ACCEDERE A PROP OGG. , OD IL VALORE O PRO.VALORE, ALTRE ASSEGNAZ., ED O S'ESPRIMON CON PARAM. E CORPO FUNZION PER PROP CICLI E METODI MAGGIORMANTE ACCESSIBILI; 
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
 
-## Agentic Development
+ IL DB Relazione con il model, che ha connessioni con il controller di scabio anch'esso;
+ il Model ha factories in generazione ed i seeders d'inserimento ovvero i dati fittizzi subentrano del db con le nostre azioni a funz.
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
-
-```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
-```
-
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+ il model connettono con factory, passano dati a controller e si elaborano, rotte specifiche che hanno i middleware, collegan ai controller che ritornano la vista ad utente; varie rotte e vari controller aiutano i modelli ed il database a rimanere pulito;

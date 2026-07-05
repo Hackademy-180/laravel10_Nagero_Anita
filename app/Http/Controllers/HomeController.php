@@ -15,12 +15,14 @@ class HomeController extends Controller
     {
         return view('home');
     }
-
+// poteva di costruirsi un controller dedito di nome diverso come auth o profile controler; 
     // PAGINA PROFILO PROTETTA con middleware( vedi in web.php regole di Route immesse; )
     public function profilo()
     {
         return view('profilo');
     }
+
+
 
 
     

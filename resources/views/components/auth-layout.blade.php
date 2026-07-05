@@ -1,82 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortyfy&middlewre</title>
-    <!-- link bts -->
+    <title>{{ $title ?? 'Autenticazione Fortify' }}</title>
+
+
+    {{-- LINK DI BOOTSTRAP NON SERVE SE USI IL VITE E IMPORTI LO STILE --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
 
+<style>
+    body{
+        min-height: 100vh;
+         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-size: cover;
+            background-position: center;
+    }
 
-
-
-    <style>
-        body {
-            background-color: #000;
-            min-height: 100vh;
-        }
-
-        .form-card {
-            border: 2px solid red;
-            border-radius: 16px;
-            background-color: #111;
-            color: #fff;
-        }
-
-        
-
-        .form-card .form-control {
-            background-color:paleturquoise;
-            border-color: palegreen;
-            color: blue;
-            border-radius: 8px;
-        }
-
+    /* card registrazione o log */
+    .form-card{
        
-
-        .form-card .card-header {
-            background-color: lime;
-            border-bottom: 1px solid red;
-            border-top: 1px solid #000;
-            border-radius: 14px 14px 0 0 !important;
-        }
-
-        .form-card .card-footer {
-            background-color:wheat;
-            color: black;
-           
-        }
-
-        .form-card a {
-        color: rgb(30, 2, 30);
-        }
+        min-width: 350px;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+</style>
 
 
-        
-        </style>
+</head>
 
-        </head>
-        <body>
+<body class="d-flex flex-column min-vh-100">
     
-    <div class="container d-flex justify-content-center align-items-center" style="min-height: 90vh;">
-        <div class="col-12 col-md-5">
+ 
+    <main class="flex-grow-1 w-100">
+        {{ $slot }}
+    </main>
+    
 
-      {{$slot}}
+    <x-footer></x-footer>
+    {{-- SCRIPT BTS --}}
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
 
-        </main>
-     
-      
+   {{-- script di bootstrap potevo mettere logica per la visibilità input password con funzioni cattura elemento icona
+   ; ed evento onclick --}}
+</body>
 
-
-        </div>
-        </div>
-        
-        
-        {{-- script js da bootstrap--}}
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
-       
-    </body>
-    </html>
+</html>

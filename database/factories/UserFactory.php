@@ -1,5 +1,8 @@
 <?php
 
+// Crea i dati nel db (riempiti da seeder ) nelle tabelle migration
+
+// qui per generare dati fittizzi , esempio di manufatturiera come 
 namespace Database\Factories;
 
 use App\Models\User;
@@ -9,6 +12,7 @@ use Illuminate\Support\Str;
 
 /**
  * @extends Factory<User>
+ * qui abbiamo per UserFactory, creerai una catena di utenti fittizzi cui deve avere email, token per essere ricordato;ecc...
  */
 class UserFactory extends Factory
 {
